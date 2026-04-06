@@ -1,6 +1,7 @@
 import random
 import string
 
+
 def generate_password(length=12):
     characters = (
         string.ascii_lowercase +
@@ -23,6 +24,7 @@ def has_number(password):
 
 def has_symbol(password):
     return any(c in string.punctuation for c in password)
+
 
 def validate_password(password):
     return (
